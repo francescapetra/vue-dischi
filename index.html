@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="css/style.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js" charset="utf-8"></script>
   <script src="https://cdn.jsdelivr.net/npm/vue"></script>
-  <title>Prova</title>
+  <title>Spotify-vue</title>
 </head>
 <body>
   <div id="root">
@@ -21,7 +21,10 @@
           <i class="fab fa-spotify"></i>
         </div>
         <label for="">
-          <select class="" name=""></select>
+          <select class="" name="">
+            <option value="">All--</option>
+            <option v-for="genere in albums" >{{ genere.genre }}</option>
+          </select>
         </label>
       </header>
       <main>
