@@ -4,12 +4,11 @@
   box-sizing: border-box;
 }
 body{
-  background-color: lightgray;
   font-family: 'Lato', sans-serif;
+  background-color: #141922;
 }
 .container{
-  background-color: #141922;
-  height: 100vh;
+
 }
 header{
   height: 80px;
@@ -35,7 +34,41 @@ select{
   width: 150px;
 }
 main{
-  background-color: pink;
+  /* background-color: pink; */
   height: 80%;
   margin: 40px  40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.card{
+  height: 350px;
+  width: 200px;
+  background-color: black;
+  border-radius: 10px;
+  padding: 20px 25px;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-around;
+  margin-right: 40px;
+  margin-top: 30px;
+}
+.img_container{
+  height: 150px;
+  margin-bottom: 10px;
+}
+img{
+  height: 100%;
+  cursor: pointer;
+}
+.content{
+  text-align: center;
+}
+h2{
+  color: #1DB954;
+  cursor: pointer;
+}
+.p_content{
+  margin-top: 10px;
+  color: #fff;
 }
