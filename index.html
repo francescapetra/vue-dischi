@@ -21,7 +21,8 @@
           <i class="fab fa-spotify"></i>
         </div>
         <label for="">
-          <select class="select_genre" v-model="select">
+          <p class="p_select">Seleziona genere</p>
+          <select class="select_genre" name="seleziona genere" v-model="select">
             <option v-for="item in categories" :value="item">{{item}}</option>
           </select>
         </label>
