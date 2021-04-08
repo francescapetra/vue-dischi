@@ -5,7 +5,7 @@
 }
 body{
   font-family: 'Lato', sans-serif;
-  background-color: #141922;
+  background-color: #1E2D3B;
 }
 .container{
 
@@ -44,7 +44,7 @@ main{
 .card{
   height: 350px;
   width: 200px;
-  background-color: blue;;
+  background-color: #2E3A46;
   border-radius: 10px;
   padding: 20px 25px;
   flex-wrap: wrap;
