@@ -3,27 +3,25 @@
     el:"#root",
     data:{
       albums: [],
-      categories: ["all"],
+      categories: ["All"],
+      select:"",
     },
     methods:{
-      prova: function(){
-      }
-    },
-    mounted: function(){
-      axios.get("https://flynn.boolean.careers/exercises/api/array/music")
-      .then((request) =>{
-      const result = request.data.response;
-      this.albums = result;
-      });
-    },
-    computed: {
-      searchGenre() {
+      searchGenre: function() {
         this.albums.forEach((genere) => {
           if (this.categories.includes(genere.genre) == false) {
             this.categories.push(genere.genre);
           }
         });
     }
-  },
+    },
+    mounted: function(){
+      axios.get("https://flynn.boolean.careers/exercises/api/array/music")
+      .then((request) =>{
+      const result = request.data.response;
+      this.albums = result;
+      this.searchGenre();
+      });
+    },
   }
 );
