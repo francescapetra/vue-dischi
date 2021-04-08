@@ -21,9 +21,8 @@
           <i class="fab fa-spotify"></i>
         </div>
         <label for="">
-          <select class="" name="">
-            <option value="">All--</option>
-            <option v-for="genere in albums" >{{ genere.genre }}</option>
+          <select class="select_genre">
+            <option v-for="item in categories" :value="item">{{item}}</option>
           </select>
         </label>
       </header>
