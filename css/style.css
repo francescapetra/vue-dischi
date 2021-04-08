@@ -8,7 +8,7 @@ body{
   font-family: 'Lato', sans-serif;
 }
 .container{
-  background-color: gray;
+  background-color: #141922;
   height: 100vh;
 }
 header{
@@ -22,13 +22,17 @@ header{
   display: flex;
   padding: 15px 0;
 }
-img{
-  height: 100%;
+i{
+  font-size: 48px;
+  color: #1DB954;
 }
 label{
 display: flex;
 justify-content: center;
 align-items: center;
+}
+select{
+  width: 150px;
 }
 main{
   background-color: pink;
