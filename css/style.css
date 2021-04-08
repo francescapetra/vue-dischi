@@ -44,7 +44,7 @@ main{
 .card{
   height: 350px;
   width: 200px;
-  background-color: black;
+  background-color: blue;;
   border-radius: 10px;
   padding: 20px 25px;
   flex-wrap: wrap;
@@ -67,6 +67,7 @@ img{
 h2{
   color: #1DB954;
   cursor: pointer;
+  font-size: 18px;
 }
 .p_content{
   margin-top: 10px;
